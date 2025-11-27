@@ -1,0 +1,62 @@
+[
+    {
+        "username": "hase",
+        "email": "ww@gmail.com",
+        "password": "scrypt:32768:8:1$tNxOhNw83ejCceqD$eb8497236cc138c0c06552f26ab999ef59273d7e8e837fe0d6a4cfeb1294b1f4678b2ac9eb8b13d5fe676f5f682a798c0fd10e5d01873f1f8535eeadd86d8820"
+    },
+    {
+        "username": "haseeb",
+        "email": "w@gmail.com",
+        "password": "scrypt:32768:8:1$51Ym9PYpGoe4TUNh$e82b0a99812f2f23805886295b5fd0154e5c3af6338575a1d32c05998f32dd6d479f9f21b58e62368e604377978c5f7d03d6bbf8da7f09a27e07d4d25108782b"
+    },
+    {
+        "username": "ali",
+        "email": "ali@gmail.com",
+        "password": "scrypt:32768:8:1$cytNWUh0I1H33SSa$2a4d4a7b14066c788f770d80187b06f0d0ef54cd12a8250081f3398c94d58312566a389167595ef74b90803656bceb9d45dee1a1f2e058e24ad82c2dde22c95c"
+    },
+    {
+        "username": "ahmed",
+        "email": "ahmed@gmail.com",
+        "password": "scrypt:32768:8:1$oskl1B5e9LgY0wDA$0df3a1d26f9e82b4e3e0f44968020474e29aa43623126a6951b2754d1de0fc1b2b52d10e028343f67e23f43e6040ff4aff20607f349795cc619dbf1ea305b5a4"
+    },
+    {
+        "username": "aguyondeen",
+        "email": "guy@hotmail.com",
+        "password": "scrypt:32768:8:1$1IywY4wVkPLhWbzW$c9d35593cd52fd73f9fc1eaec5f4c25ca1e31d6ea6dbb77792c9db6b737ee0bc7ef8b3172bd399d9166de5723da090983700f69ba4119571119091b60bb24c95"
+    },
+    {
+        "username": "rida",
+        "email": "rida@gmail.com",
+        "password": "scrypt:32768:8:1$dktjQPOAajMx5d3p$b1a42dfe3b59d491306c3eb4d2d5c2a43a6282a5616ad4e483b3437e18cfdf6f3e3567a0e2c0715b90a04bc1f2fcc5c64bf281d1c57d8062e296dfe23aaf316d"
+    },
+    {
+        "username": "test",
+        "email": "test@gmai.com",
+        "password": "scrypt:32768:8:1$nnoVsasXFYm2cSgi$155518f5cad4fe84b75f04b18d1a78defd07c3286216b4fc5cd6ca5cdf408448963be9bd12026ea88aeec410329832bfd6bad1b5f9d29758c30afd7da8ac23d4"
+    },
+    {
+        "username": "hasee",
+        "email": "panda@gmail.com",
+        "password": "scrypt:32768:8:1$vZ8zpqZOdZa45lWB$7ea6ea4b4170e6626c052563c3604725197489d4784b05b0160c3ad18b9fbfb172e9c570b8accb41b67c0b7b7211a5f33e4be57ff1cd989479c6f9ef4427ced1"
+    },
+    {
+        "username": "haseeb",
+        "email": "muhammadhaseeb6271@gmail.com",
+        "password": "abcd2616"
+    },
+    {
+        "username": "ninjaop",
+        "email": "haseebm2678@gmail.com",
+        "password": "scrypt:32768:8:1$MGCM3jiOutJAP1bM$09b5bb2e0aad52a6f88398dc96711dfa133879840da6659f0db7dac5313e5a585a7bcffbd50ea9de27ee6d24b990e417d0922d9d29407529cdd2eb55cc9b78e2"
+    },
+    {
+        "username": "rida",
+        "email": "riddasaeed517@gmail.com",
+        "password": "scrypt:32768:8:1$8i85pPUQ8EVWGG7C$3726a86f34d8e8940cafbbf43044c0d7cc4818a7a40e3f8e9284e563e0969031c11df0527c866c3ab978739fe2a9cc5897ccc1ab32fecdef6fdc855a673ac988"
+    },
+    {
+        "username": "ali",
+        "email": "alimirzaa4553@gmail.com",
+        "password": "scrypt:32768:8:1$DqaPTMbnpWSEjast$4248c2bfa1f1e59b10e44f3396bd48793d70aa8bd4563069d1e9a58a65fcb02bb8e237c43ff31d5e3776d36c4be87f259f3e7cdfd83f743cbe66555acce6b48d"
+    }
+]

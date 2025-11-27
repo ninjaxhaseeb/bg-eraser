@@ -1,0 +1,8 @@
+Flask
+rembg
+Pillow
+python-dotenv
+Werkzeug
+flask-login
+email-validator
+gunicorn

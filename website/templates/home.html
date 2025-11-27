@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Background Eraser | Remove Image Backgrounds{% endblock %}
+
+{% block content %}
+
+<section class="text-center max-w-3xl mx-auto">
+    <h1 class="text-5xl font-bold text-gray-800 mb-6">Erase Backgrounds Like Magic For Free</h1>
+    <p class="text-xl text-gray-600 mb-10">
+        Upload an image and watch the background disappear in seconds. No Photoshop skills required!
+    </p>
+
+    <!-- Upload Box -->
+    <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+        <div id="dropZone" class="border-2 border-dashed border-gray-300 rounded-lg p-12 text-center cursor-pointer hover:border-indigo-500 transition-colors duration-300">
+            <i data-feather="upload" class="w-12 h-12 mx-auto text-indigo-500 mb-4"></i>
+            <h3 class="text-xl font-medium text-gray-700 mb-2">Drag & Drop Your Image</h3>
+            <p class="text-gray-500 mb-4">or click to browse files</p>
+            <input type="file" id="fileInput" class="hidden" accept="image/*">
+            <button id="selectImageBtn" class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-300">
+                Select Image
+            </button>
+        </div>
+    </div>
+
+    <!-- Result Boxes -->
+    <div id="resultBoxes" class="mb-6 flex flex-col md:flex-row gap-6 justify-center items-start hidden">
+        <!-- Original Image -->
+        <div class="w-full md:w-1/2 bg-gray-100 rounded-lg p-4 flex justify-center items-center">
+            <img id="originalImage" src="" alt="Original Image" class="max-h-80 object-contain hidden">
+        </div>
+
+        <!-- Processed Image -->
+        <div id="processedBox" class="w-full md:w-1/2 bg-gray-100 rounded-lg p-4 flex justify-center items-center relative hidden">
+            <div id="loading" class="absolute inset-0 flex justify-center items-center hidden">
+                <div class="w-16 h-16 border-8 border-gray-300 border-t-indigo-500 rounded-full animate-spin"></div>
+            </div>
+            <img id="processedImage" src="" alt="Processed Image" class="max-h-80 object-contain hidden">
+        </div>
+    </div>
+
+    <!-- Remove Background Button -->
+    <div class="flex justify-center mb-16">
+        <button id="removeBackgroundBtn" 
+        class="px-10 py-3 rounded-lg font-medium bg-white text-gray-800 transition-colors duration-700 ease-in-out hidden"
+        onmouseover="this.style.backgroundColor='hsl(239, 84%, 67%)'; this.style.color='white';"
+        onmouseout="this.style.backgroundColor='white'; this.style.color='gray';">
+            Erase Background
+        </button>
+        <a id="downloadPreviewBtn"
+        class="px-8 py-3 rounded-lg font-medium bg-green-600 text-white hover:bg-green-700 transition-colors duration-300 hidden mr-4">
+           Download Preview
+        </a>
+        <a id="downloadHdBtn"
+        class="px-8 py-3 rounded-lg font-medium bg-indigo-600 text-white hover:bg-indigo-700 transition-colors duration-300 hidden">
+            Download HD
+        </a>
+    </div>
+    <!-- Feature Cards --> <div class="grid md:grid-cols-3 gap-8 mb-16"> <div class="bg-white p-6 rounded-lg shadow-md"> <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4 mx-auto"> <i data-feather="zap" class="w-6 h-6 text-indigo-600"></i> </div> <h3 class="text-lg font-semibold text-gray-800 mb-2">Lightning Fast</h3> <p class="text-gray-600">Process images in seconds with our AI-powered technology</p> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4 mx-auto"> <i data-feather="edit" class="w-6 h-6 text-indigo-600"></i> </div> <h3 class="text-lg font-semibold text-gray-800 mb-2">Precision Editing</h3> <p class="text-gray-600">Get perfect cutouts with clean edges every time</p> </div> <div class="bg-white p-6 rounded-lg shadow-md"> <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4 mx-auto"> <i data-feather="lock" class="w-6 h-6 text-indigo-600"></i> </div> <h3 class="text-lg font-semibold text-gray-800 mb-2">Secure Processing</h3> <p class="text-gray-600">Your images are automatically deleted after processing</p> </div> </div>
+</section>
+
+{% endblock %}
+
+

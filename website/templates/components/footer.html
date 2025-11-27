@@ -1,0 +1,53 @@
+<footer class="bg-white shadow-inner mt-24">
+  <div class="container mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+
+    <!-- Logo & Description -->
+    <div class="flex flex-col space-y-4">
+      <a href="{{ url_for('views.home') }}" class="flex items-center space-x-3">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="h-10 w-10">
+        <span class="text-2xl font-bold text-gray-800">Background Eraser</span>
+      </a>
+      <p class="text-gray-500">
+        Remove image backgrounds instantly with our AI-powered tool. Fast, Free, secure, and easy to use.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="flex flex-col space-y-2">
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Quick Links</h3>
+      <a href="{{ url_for('views.home') }}" class="text-gray-600 hover:text-indigo-500 transition">Home</a>
+      {% if not user %}
+      <a href="{{ url_for('auth.login') }}" class="text-gray-600 hover:text-indigo-500 transition">Login</a>
+      <a href="{{ url_for('auth.signup') }}" class="text-gray-600 hover:text-indigo-500 transition">Sign Up</a>
+      {% endif %}
+    </div>
+
+    <!-- Contact / Socials -->
+    <div class="flex flex-col space-y-2">
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Connect With Us</h3>
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-600 hover:text-indigo-500 transition">
+          <i data-feather="linkedin" class="w-6 h-6"></i>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-indigo-500 transition">
+          <i data-feather="twitter" class="w-6 h-6"></i>
+        </a>
+        <a href="https://www.instagram.com/haseebcodes/" class="text-gray-600 hover:text-indigo-500 transition">
+          <i data-feather="instagram" class="w-6 h-6"></i>
+        </a>
+      </div>
+      <div>
+      <p class="text-gray-500 mt-4 text-sm">
+        &copy; {{ current_year }} Background Eraser. All rights reserved.
+      </p>
+      <a href="{{ url_for('views.terms') }}" class="text-gray-600 hover:text-indigo-500 transition text-sm">Terms and Conditions</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  feather.replace();
+</script>
+
