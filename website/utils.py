@@ -23,8 +23,8 @@ def save_users(users):
         json.dump(users, f, indent=4)
 
 def send_email(to_email, otp):
-    sender = "background.eraser12@gmail.com"
-    password = "xtld zhos vimb pvsa"
+    sender = os.environ.get("EMAIL")
+    password = os.environ.get("EMAIL_PASSWORD")
 
     msg = MIMEText(f"Hey there \n Your verification code is: {otp}")
     msg["Subject"] = "Verify Your Email"
