@@ -6,3 +6,4 @@ Werkzeug
 flask-login
 email-validator
 gunicorn
+flask-cors
