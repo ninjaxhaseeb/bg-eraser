@@ -7,5 +7,6 @@ flask-login
 email-validator
 gunicorn
 flask-cors
-onnxruntime-cpu
+onnxruntime-cpu==1.16.3
+
 
