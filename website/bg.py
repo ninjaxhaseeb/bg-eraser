@@ -1,5 +1,7 @@
 # website/bg.py
 from flask import Blueprint, request, jsonify, current_app, session, redirect, url_for, flash, send_file
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from rembg import remove, new_session
 from PIL import Image
 import io
